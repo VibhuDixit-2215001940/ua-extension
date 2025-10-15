@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>UA Switcher Options</title>
+<style>body{font-family:system-ui,Segoe UI,Roboto,Arial;padding:16px;max-width:720px}label,input,textarea,button{display:block;margin:8px 0;width:100%}table{width:100%;border-collapse:collapse}td,th{padding:6px;border:1px solid #ddd}</style>
+</head>
+<body>
+<h2>UA Switcher</h2>
+<label>Global User-Agent (leave empty to use browser default)</label>
+<input id="global" placeholder="e.g. Mozilla/5.0 (Windows NT 10.0; Win64; x64)"/>
+<h3>Per-host rules</h3>
+<table id="rulesTable"><thead><tr><th>Host</th><th>User-Agent</th><th>Action</th></tr></thead><tbody></tbody></table>
+<label>Host (example: example.com)</label>
+<input id="host"/>
+<label>User-Agent for host</label>
+<input id="hostua"/>
+<button id="add">Add host rule</button>
+<hr/>
+<button id="save">Save</button>
+<button id="reset">Reset to browser default</button>
+<script src="options.js"></script>
+</body>
+</html>
